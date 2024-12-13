@@ -21,7 +21,7 @@
 		"build:watch": "pnpm clean  && pnpm check:types && vite build --watch",
 		"check:types": "vue-tsc --noEmit",
 		"prepare": "husky install",
-		"auto:publish": "git checkout release && git merge dev && npm version patch && pnpm build && pnpm publish && git push --force origin release && git checkout dev && git merge release && git push origin dev",
+		"auto:publish": "git checkout release && git merge dev && npm version patch && pnpm build && pnpm publish && git push --force origin release && git checkout dev && git merge release && git push origin dev && cnpm sync use-semantic-version",
 		"sync": "cnpm sync use-semantic-version"
 	},
 	"dependencies": {

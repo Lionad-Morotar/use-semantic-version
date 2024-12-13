@@ -21,7 +21,7 @@
 		"build:watch": "pnpm clean  && pnpm check:types && vite build --watch",
 		"check:types": "vue-tsc --noEmit",
 		"prepare": "husky install",
-		"auto:publish": "git checkout dev && git branch -D release && git checkout -b release && git merge dev && npm version patch && pnpm build && pnpm publish && git push --force origin release && git checkout dev && git merge release && git push origin dev",
+		"auto:publish": "git checkout release && git merge dev && npm version patch && pnpm build && pnpm publish && git push --force origin release && git checkout dev && git merge release && git push origin dev",
     "sync": "cnpm sync use-semantic-version"
 	},
 	"dependencies": {
@@ -74,5 +74,17 @@
 		"version",
 		"vue-use",
 		"hook"
-	]
+	],
+  "files": [
+    ".github",
+    "dist",
+    "types",
+    ".npmrc",
+    "env.d.ts",
+    "package.json",
+    "CODE_OF_CONDUCT.md",
+    "pnpm-lock.yaml",
+    "README.md",
+    "tsconfig.json"
+  ]
 }

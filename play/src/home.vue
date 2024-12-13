@@ -53,7 +53,7 @@ const {
   version,
   major, minor, patch,
   majoring, minoring, patching,
-  compareWith,
+  compareTo,
 } = useSemanticVersion();
 
 const {
@@ -63,8 +63,8 @@ const {
 } = useSemanticVersion('1.0.0');
 
 const meter = computed(() => {
-  return compareWith(version2)
-  // return compareWith({ major: major2.value, minor: minor2.value, patch: patch2.value })
+  return compareTo(version2)
+  // return compareTo({ major: major2.value, minor: minor2.value, patch: patch2.value })
 })
 
 </script>

@@ -29,6 +29,10 @@ patching();
 console.log('version:', version.value); // 0.0.2
 ```
 
+## Package Info
+
+package size: ~50loc & <<1kb
+
 ## License
 
 MIT License

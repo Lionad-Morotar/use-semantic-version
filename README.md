@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="555" alt="use-semantic-version" src="./docs/assets/logo.png">
+  <img width="555" alt="use-semantic-version" src="https://github.com/Lionad-Morotar/use-semantic-version/blob/release/docs/assets/logo.png?raw=true">
 </p>
 
 <p align="center">

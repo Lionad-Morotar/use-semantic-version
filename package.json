@@ -4,12 +4,12 @@
 	"private": false,
 	"main": "./dist/lib/index.cjs.js",
 	"module": "./dist/lib/index.esm.js",
-	"types": "./dist/types/index.d.ts",
+	"types": "./dist/src/hooks/index.d.ts",
 	"exports": {
 		".": {
 			"require": "./dist/lib/index.cjs.js",
 			"import": "./dist/lib/index.esm.js",
-			"types": "./dist/types/index.d.ts"
+			"types": "./dist/src/hooks/index.d.ts"
 		},
 		"./*": "./*"
 	},

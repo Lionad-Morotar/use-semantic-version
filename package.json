@@ -1,6 +1,6 @@
 {
 	"name": "use-semantic-version",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"private": false,
 	"main": "./dist/lib/index.cjs.js",
 	"module": "./dist/lib/index.esm.js",
@@ -22,7 +22,7 @@
 		"check:types": "vue-tsc --noEmit",
 		"prepare": "husky install",
 		"auto:publish": "git checkout release && git merge dev && npm version patch && pnpm build && pnpm publish && git push --force origin release && git checkout dev && git merge release && git push origin dev",
-    "sync": "cnpm sync use-semantic-version"
+		"sync": "cnpm sync use-semantic-version"
 	},
 	"dependencies": {
 		"vue-demi": "^0.14.10"
@@ -75,16 +75,16 @@
 		"vue-use",
 		"hook"
 	],
-  "files": [
-    ".github",
-    "dist",
-    "types",
-    ".npmrc",
-    "env.d.ts",
-    "package.json",
-    "CODE_OF_CONDUCT.md",
-    "pnpm-lock.yaml",
-    "README.md",
-    "tsconfig.json"
-  ]
+	"files": [
+		".github",
+		"dist",
+		"types",
+		".npmrc",
+		"env.d.ts",
+		"package.json",
+		"CODE_OF_CONDUCT.md",
+		"pnpm-lock.yaml",
+		"README.md",
+		"tsconfig.json"
+	]
 }

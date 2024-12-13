@@ -17,7 +17,9 @@ a simple hook in Vue3 to manage semantic versioning
 
 ## Brief
 
-```vue
+simple usage:
+
+```ts
 import { useSemanticVersion } from 'use-semantic-version';
 
 const { version, major, minor, patch, majoring, minoring, patching } = useSemanticVersion();
@@ -27,6 +29,15 @@ console.log('version:', version.value); // 0.0.1
 patching();
 
 console.log('version:', version.value); // 0.0.2
+```
+
+compare two versions:
+
+```ts
+const { compareTo } = useSemanticVersion();
+const { compareTo, version: version2 } = useSemanticVersion();
+
+console.log('compare:', compareTo(version2)); // ComputedRef<'>' |  '<' | '='>
 ```
 
 ## Package Info

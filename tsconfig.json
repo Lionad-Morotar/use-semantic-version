@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "module": "esnext",
+    "lib": ["ESNext"],
+    "useDefineForClassFields": true,
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "strict": true,
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "declaration": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "use-semantic-version": [
+        "./dist/lib/index.esm.js"
+      ]
+    }
+  },
+  "includes": [
+    "env.d.ts",
+  ],
+  "exclude": ["node_modules", "dist", "docs", "example", "test"]
+}
